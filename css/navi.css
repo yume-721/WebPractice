@@ -1,0 +1,41 @@
+/*----------------------------------------------
+コメントに従い、プロパティを記述しましょう。
+----------------------------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+}
+#global_navi{
+	width:800px;
+	height:50px;
+	margin:50px auto;
+}
+#global_navi ul{
+	width:805px;
+	list-style:none;
+}
+#global_navi ul li{
+	float:left;
+	border-left:1px solid #fff;
+}
+#global_navi ul li a{
+	width:160px;
+	height:50px;
+	background:#09f;
+	/*ブロックレベル要素に変える*/
+	text-decoration:none;
+	/*テキストを左右中央揃えにする*/
+	/*テキストを上下中央揃えにする*/
+	/*Transformプロパティに対しトランジション効果をかける（-webkit-あり）*/
+	/*Transformプロパティに対しトランジション効果をかける（-webkit-なし）*/
+	/*トランジション効果を0.2秒に設定（-webkit-あり）*/
+	/*トランジション効果を0.2秒に設定（-webkit-なし）*/
+}
+#global_navi ul li a:link{
+	color:#fff;
+}
+#global_navi ul li a:hover{
+	/*サイズを1.5倍にする（-webkit-あり）*/
+	/*サイズを1.5倍にする（-webkit-なし）*/
+}
