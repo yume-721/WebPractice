@@ -34,45 +34,69 @@
   <main>
     <h3 class="heading">お問い合わせ<span>Contact Us</span></h3>
     <div class="main_contents"> 
+       <form action="mailto:xxx@xx.jp" method="post">
+          <input type="hidden" name="mode" value="regchk" />
       <!--①8章で下記を入力する。テーブルは用意されているものを使っても可-->
         <table>
           <tr>
-            <th></th>
-            <td></td>
+            <th>お名前</th>
+            <td><input type="text" name="name" size="40" value=""></td>
           </tr>
           <tr>
-            <th></th>
-            <td></td>
+            <th>フリガナ</th>
+            <td><input type="text" name="name2" size="40" value=""></td>
           </tr>
           <tr>
-            <th></th>
-            <td></td>
+            <th>性別</th>
+            <td><input type="radio" name="gender" id="man" value="man"> 
+              <label for="man">男性</label>
+                <input type="radio" name="gender" id="female" value="female"> 
+                <label for="female">女性</label></td>
           </tr>
           <tr>
-            <th rowspan="3"></th>
-            <td></td>
+            <th rowspan="3">住所</th>
+            <td>郵便番号
+              <input type="text" name="zipcode" size="10" value="" id="zipcode"></td>
           </tr>
           <tr>
-            <td></td>
+            <td>都道府県
+              <select name="divisions" id="divisions">
+                <option value="">選択してください</option>
+                <option value="Tochigi">栃木県</option> 
+                <option value="Gunma">群馬県</option> 
+                <option value="Ibaraki">茨城県</option> 
+                <option value="Saitama">埼玉県</option> 
+                <option value="Tokyo">東京都</option> 
+                <option value="Chiba">千葉県</option> 
+                <option value="Kanagawa">神奈川県</option>
+              </select></td>
           </tr>
           <tr>
-            <td></td>
+            <td>市区町村・番地<br>
+              <input type="text" name="address" size="60" value=""></td>
           </tr>
           <tr>
-            <th></th>
-            <td></td>
+            <th>メールアドレス</th>
+            <td><input type="email" name="email" size="35" value=""></td>
           </tr>
           <tr>
-            <th></th>
-            <td></td>
+            <th>お問い合わせ種別</th>
+            <td><input type="checkbox" name="inquiry_type" id="solutions">
+            <label for="solutions">ソリューション</label>
+            <input type="checkbox" name="inquiry_type" id="cloud_services">
+            <label for="cloud_services">クラウド</label>
+            <input type="checkbox" name="inquiry_type" id="consulting">
+            <label for="consulting">コンサルティング</label></td>
           </tr>
           <tr>
-            <th></th>
-            <td></td>
+            <th>お問い合わせ内容</th>
+            <td><textarea name="message" rows="15" cols="35">
+                </textarea></td>
           </tr>
           <tr>
-            <th></th>
-            <td></td>
+            <th>内容確認</th>
+            <td><input type="image" src="images/send.png" alt="送信" width="223" 
+                height="64" /></td>
           </tr>
         </table>
       </form>
