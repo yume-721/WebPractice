@@ -1,10 +1,10 @@
 @charset "UTF-8";
 body {
-font-family: "メイリオ", "Meiryo", arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku  
-Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif; 
+font-family: "メイリオ", "Meiryo", arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif; 
 font-size: 75%;
 line-height: 1.6;
 color: #333;
+background: url(../images/header_back.gif) repeat-x;
 }
 a:link, a:visited { 
 color: #157dd6;
@@ -13,12 +13,24 @@ text-decoration: none;
 a:hover {
 color: #367f93;
 }
+img {
+border: 0; 
+vertical-align: bottom;
+}
 /*--------------------------------
 全体の枠 
 --------------------------------*/
+#wrapper {
+width: 900px;
+margin: 0 auto;
+}
 /*--------------------------------
 ヘッダー 
 --------------------------------*/
+header {
+	margin-bottom: 10px;
+	height: 138px;
+}
 header h1 {
 font-size: 10px;
 font-weight: normal; 
@@ -28,15 +40,125 @@ background-color: #555;
 line-height: 20px; 
 height: 20px;
 }
+/* ロゴ */ 
+header p{
+ height:65px;
+}
 /*--------------------------------
 グローバルナビ 
 --------------------------------*/
+#global_navi{ 
+ height:53px;
+}
+#global_navi li{ 
+ float:left;
+}
+#global_navi li a{ 
+ display:block;
+ text-indent:-9999px;
+ width:180px;
+ height:53px;
+}
+#global_navi #home{ 
+background:url(../images/navi_home.gif) no-repeat;
+}
+#global_navi #home:hover{ 
+background:url(../images/navi_home_ov.gif) no-repeat;
+}
+#global_navi #works{ 
+background:url(../images/navi_works.gif) no-repeat;
+}
+#global_navi #works:hover{ 
+background:url(../images/navi_works_ov.gif) no-repeat;
+}
+#global_navi #recruit{ 
+background:url(../images/navi_recruit.gif) no-repeat;
+}
+#global_navi #recruit:hover{
+	background:url(../images/navi_recruit_ov.gif) no-repeat;
+
+}
+#global_navi #company{ 
+background:url(../images/navi_company.gif) no-repeat;
+}
+#global_navi #company:hover{ 
+background:url(../images/navi_company_ov.gif) no-repeat;
+}
+#global_navi #contact{ 
+background:url(../images/navi_contact.gif) no-repeat;
+}
+#global_navi #contact:hover{ 
+background:url(../images/navi_contact_ov.gif) no-repeat;
+}
 /*--------------------------------
 メインビジュアル 
 --------------------------------*/
+#main_visual{ 
+ width:900px;
+}
+
 /*--------------------------------
 メインコンテンツ 
 --------------------------------*/
+main{float:right;
+ width:627px;
+padding:20px 0 50px;
+}
+main h3{ 
+ padding-left:25px;
+ line-height:40px;
+ font-size:16px;
+ font-weight:normal;
+ color:#666;
+background:url(../images/headbg.png) no-repeat;
+}
+main h3 span{ 
+ font-size:10px;
+ color:#8fc41f;
+ padding-left:10px;
+}
+.main_contents{ 
+padding:20px 10px;
+ margin-bottom:20px;
+border:1px solid #ddd;
+}
+article{
+margin:0 0 20px 0; 
+padding:0 10px; 
+border:1px solid #ddd;
+}
+.main_contents dl{ 
+ margin-left:20px;
+ height:220px;
+ overflow:auto;
+}
+.main_contents dl dt{ 
+ color:#8fc41f;
+ font-weight:bold;
+ margin-bottom:10px;
+}
+.main_contents dl dd{ 
+ margin-bottom:20px;
+ padding-bottom:10px;
+border-bottom:1px dashed #ddd;
+}
+section{ 
+ overflow:hidden;
+padding:20px 0 10px;
+margin:0 0 20px 0; 
+border-bottom:1px dashed #dcdcdc;
+}
+.service{ 
+ width:420px;
+ float:right;
+padding:0 10px 15px 15px;
+}
+.service_pic{ 
+ width:135px;
+ float:left;
+ padding:0 15px 15px 10px;
+
+}
 .main2 {
 	padding: 20px 10px 20px 10px;
 	margin: 0 0 20px 0;
@@ -68,6 +190,82 @@ article h4 {
 /*--------------------------------
 サイドバー 
 --------------------------------*/
+#sidebar{ 
+ float:left;
+ width:233px;
+padding:22px 0 50px;
+}
+#sidebar h3{ 
+ padding-left:25px;
+ line-height:40px;
+ font-size:14px;
+ font-weight:normal;
+ color:#333;
+background:url(../images/side_headbg.png) no-repeat;
+}
+#local_navi{
+padding:0 0 10px 17px;
+ margin-bottom:20px;
+border:1px solid #ddd;
+}
+#local_navi li { 
+padding:10px 0;
+ margin-right:15px;
+border-bottom:1px dashed #dcdcdc;
+}
+#local_navi li{ 
+padding:10px 0;
+ margin-right:15px;
+border-bottom:1px dashed #dcdcdc;
+}
+#local_navi li:last-child{
+ border:none;
+}
+#local_navi a:link,#local_navi a:visited{
+ display:block;
+ padding-left:12px;
+ line-height:normal;
+ text-decoration:none;
+ color:#313131;
+background:url(../images/linkArrow.gif) no-repeat left center;
+}
+#local_navi a:hover{ 
+ color:#8fc41f;
+}
+aside p{ 
+ margin-bottom:20px;
+}    
 /*--------------------------------
 フッター 
 --------------------------------*/
+footer{
+ clear:both;
+ background:#eeeeee;
+}
+footer ul{
+margin:0 auto;
+ width:900px;
+padding:30px 0; 
+ text-align:center;
+}
+footer li{ 
+ display:inline;
+padding:0 16px; 
+border-left:1px dashed #ccc;
+}
+footer li:first-child{
+ border:none;
+}
+footer li a:link,footer li a:visited{
+ text-decoration:none;
+ color:#555;
+}
+footer li a:hover{ 
+ color:#aaa;
+}
+#copy{
+padding:10px 0 40px; 
+ font-size:10px;
+ text-align:center;
+ color:#555;
+}
